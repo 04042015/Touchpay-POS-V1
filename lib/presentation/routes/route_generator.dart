@@ -7,6 +7,8 @@ import '../pages/pos/pos_page.dart';
 import '../pages/menu/menu_management_page.dart';
 import '../pages/orders/order_management_page.dart';
 import '../pages/settings/settings_page.dart';
+import '../pages/tables/table_management_page.dart';
+import '../pages/transactions/transaction_history_page.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -58,6 +60,18 @@ class RouteGenerator {
       case AppRoutes.settings:
         return MaterialPageRoute(
           builder: (_) => const SettingsPage(),
+          settings: settings,
+        );
+
+      case AppRoutes.tableManagement:
+        return MaterialPageRoute(
+          builder: (_) => const TableManagementPage(),
+          settings: settings,
+        );
+
+      case AppRoutes.transactionHistory:
+        return MaterialPageRoute(
+          builder: (_) => const TransactionHistoryPage(),
           settings: settings,
         );
 
