@@ -18,7 +18,10 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.1'  # ✅ versi ini wajib agar cocok dengan Dart 3.8.1
+          flutter-version: '3.22.1'   # << JANGAN SALAH TULIS!
+
+      - name: Run flutter doctor
+        run: flutter doctor -v       # << untuk memastikan versi terinstall
 
       - name: Install dependencies
         run: flutter pub get
