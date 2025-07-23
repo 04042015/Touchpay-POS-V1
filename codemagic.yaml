@@ -1,0 +1,20 @@
+workflows:
+  build-android:
+    name: Build Android APK
+    max_build_duration: 30
+    environment:
+      flutter: "3.22.1"
+      xcode: none
+      vars:
+        APP_NAME: "Touchpay POS"
+    scripts:
+      - name: Install dependencies
+        script: flutter pub get
+      - name: Build APK
+        script: flutter build apk --release
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
+    publishing:
+      email:
+        recipients:
+          - your_email@example.com
