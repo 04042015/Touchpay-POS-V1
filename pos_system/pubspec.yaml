@@ -50,13 +50,13 @@ dependencies:
   # Printing (for receipts)
   esc_pos_printer: ^4.1.0
   esc_pos_utils: ^1.1.0
-  
+
   # Camera & QR Code
   qr_flutter: ^4.1.0
   qr_code_scanner:
-  git:
-    url: https://github.com/juliuscanute/qr_code_scanner.git
-    ref: master
+    git:
+      url: https://github.com/juliuscanute/qr_code_scanner.git
+      ref: master
   
 
 dev_dependencies:
