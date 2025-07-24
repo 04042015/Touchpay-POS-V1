@@ -1,0 +1,15 @@
+workflows:
+  build-android:
+    name: Build Android APK from subdirectory
+    max_build_duration: 60
+    environment:
+      flutter: 3.22.1
+    scripts:
+      - name: Change to project directory
+        script: cd pos_system
+      - name: Install dependencies
+        script: flutter pub get
+      - name: Build release APK
+        script: flutter build apk --release
+    artifacts:
+      - pos_system/build/app/outputs/flutter-apk/app-release.apk
