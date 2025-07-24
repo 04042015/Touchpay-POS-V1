@@ -5,8 +5,6 @@ workflows:
     instance_type: mac_mini
     environment:
       flutter: stable
-      android_signing:
-        - keystore_reference
     cache:
       cache_paths:
         - ~/.pub-cache
