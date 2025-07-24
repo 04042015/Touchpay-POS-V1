@@ -3,7 +3,7 @@ workflows:
     name: Build Android APK
     max_build_duration: 30
     environment:
-      flutter: "3.22.1"
+      flutter: "3.32.7"
     working_directory: pos_system
     scripts:
       - name: Install dependencies
