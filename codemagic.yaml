@@ -3,7 +3,7 @@ workflows:
     name: Build Android APK from subdirectory
     max_build_duration: 60
     environment:
-      flutter: 3.22.1
+      flutter: "3.32.7"
     scripts:
       - name: Build from subdirectory
         script: |
